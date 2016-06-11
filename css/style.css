@@ -5,7 +5,12 @@
 .title{
     text-align: center;
 }
-.about,.projects,.education,.work_experience{
+
+.projects,.education,.work_experience{
     border: solid black 2px;
     padding: 2em 5em 2em 5em;
+}
+.about{
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
