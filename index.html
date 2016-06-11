@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/palette.css"/>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
@@ -24,6 +25,12 @@
                 event.preventDefault();
                 $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
             });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
         });
     </script>
 
@@ -50,22 +57,27 @@
     </nav>
 
     <!-- Something like this will be for the general layout-->
-    <div id="about" class="about">
+    <div id="about" class="about dark-primary-color">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="img/ryan_face.jpg" class="img-circle" alt="Ryan">
+                    <img id="main_image" src="img/ryan_face.jpg" class="img-circle" alt="Ryan" >
                 </div>
                 <div class="col-md-7">
                     <div class="jumbotron">
                         <div class="row">
                             <div class="col-md-10">
                                 <h1>Ryan Pelletier</h1>
-                                <p>
-                                    <strong>Hometown:</strong> Lynchburg, VA<br>
-                                    <strong>School:</strong> Liberty University<br>
-                                    <strong>Major:</strong> Computer Science<br>
-                                    <strong>Age:</strong> 21<br>
+                                <p class="primary-text-color">
+                                    <!--<strong >Hometown:</strong> Lynchburg, VA<br>-->
+                                    <!--<strong>School:</strong> Liberty University<br>-->
+                                    <!--<strong>Major:</strong> Computer Science<br>-->
+                                    <!--<strong>Age:</strong> 21<br>-->
+                                    Hey guys! Thanks for visiting my page. Below you will find information
+                                    about me as well as some fun and useful projects that I have been working on.
+                                    I am currently a senior at Liberty University studying computer science.
+                                    As you will see below I have several areas of interest
+                                    and experience.
                                 </p>
                             </div>
                         </div>
@@ -74,19 +86,28 @@
             </div>
         </div>
     </div>
-
     <div id="projects" class="projects">
         <div class="container">
-            <h2 class ="title">Projects</h2>
+            <h2 class ="title">Projects: <small><a href="https://github.com/ryanp102694">Check out my GitHub</a></small></h2>
             <div class="row">
                 <div class="col-md-4">
-                    <a href="img/ryan_face.jpg" class="thumbnail">
-                        <img src="img/ryan_face.jpg" alt="Pulpit Rock" style="width:250px;height:250px">
+                    <a href="img/quadcopter.jpg" class="thumbnail">
+                        <img src="img/quadcopter_thumbnail.png" alt="Quadcopter" style="width:250px;height:250px">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="img/zilefilla.png" class="thumbnail">
+                        <img src="img/zilefilla.png" alt="ZileFilla" style="width:250px;height:250px">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="img/virtualcasewall.png" class="thumbnail">
+                        <img src="img/virtualcasewall_thumbnail.PNG" alt="VirtualCaseWall" style="width:250px;height:250px">
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="img/ryan_face.jpg" class="thumbnail">
-                        <img src="img/ryan_face.jpg" alt="Moustiers Sainte Marie" style="width:250px;height:250px">
+                        <img src="img/ryan_face.jpg" alt="Cinque Terre" style="width:250px;height:250px">
                     </a>
                 </div>
                 <div class="col-md-4">
@@ -103,39 +124,41 @@
         </div>
     </div>
 
-    <div id="work_experience" class="work_experience">
+    <div id="work_experience" class="work_experience dark-primary-color">
         <div class="container">
-            <h2 class ="title">Work Experience</h2>
-            Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
-            As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
-            Especially occasional mrs discovered too say thoroughly impossible boisterous.
-            My head when real no he high rich at with. After so power of young as.
-            Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
-            Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
-            As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
-            Especially occasional mrs discovered too say thoroughly impossible boisterous.
-            My head when real no he high rich at with. After so power of young as.
-            Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
-            Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
-            As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
-            Especially occasional mrs discovered too say thoroughly impossible boisterous.
-            My head when real no he high rich at with. After so power of young as.
-            Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
-            Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
-            As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
-            Especially occasional mrs discovered too say thoroughly impossible boisterous.
-            My head when real no he high rich at with. After so power of young as.
-            Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
-            Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
-            As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
-            Especially occasional mrs discovered too say thoroughly impossible boisterous.
-            My head when real no he high rich at with. After so power of young as.
-            Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
-            Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
-            As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
-            Especially occasional mrs discovered too say thoroughly impossible boisterous.
-            My head when real no he high rich at with. After so power of young as.
-            Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
+            <h2 class ="title text-primary-color">Work Experience</h2>
+            <div class="jumbotron">
+                Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
+                As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
+                Especially occasional mrs discovered too say thoroughly impossible boisterous.
+                My head when real no he high rich at with. After so power of young as.
+                Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
+                Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
+                As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
+                Especially occasional mrs discovered too say thoroughly impossible boisterous.
+                My head when real no he high rich at with. After so power of young as.
+                Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
+                Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
+                As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
+                Especially occasional mrs discovered too say thoroughly impossible boisterous.
+                My head when real no he high rich at with. After so power of young as.
+                Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
+                Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
+                As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
+                Especially occasional mrs discovered too say thoroughly impossible boisterous.
+                My head when real no he high rich at with. After so power of young as.
+                Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
+                Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
+                As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
+                Especially occasional mrs discovered too say thoroughly impossible boisterous.
+                My head when real no he high rich at with. After so power of young as.
+                Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
+                Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction.
+                As into ye then form. To easy five less if rose were. Now set offended own out required entirely.
+                Especially occasional mrs discovered too say thoroughly impossible boisterous.
+                My head when real no he high rich at with. After so power of young as.
+                Bore year does has get long fat cold saw neat. Put boy carried chiefly shy general.
+            </div>
         </div>
     </div>
 
