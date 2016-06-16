@@ -29,12 +29,6 @@
     </script>
 
     <script>
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover();
-        });
-    </script>
-
-    <script>
         !function(d,s,id){
         var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
             if(!d.getElementById(id)){
@@ -59,6 +53,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#" class="scroll">Home</a></li>
                 <li><a href="#about" class="scroll">About</a></li>
+                <li><a href="#skills" class="scroll">Skills</a></li>
                 <li><a href="#projects" class="scroll">Projects</a></li>
                 <li><a href="#work_experience" class="scroll">Work Experiece</a></li>
             </ul>
@@ -69,37 +64,71 @@
     </nav>
 
     <!-- Something like this will be for the general layout-->
-    <div id="about" class="about dark-primary-color">
+    <div id="about" class="about backdrop">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <img id="main_image" src="img/ryan_face.jpg" class="img-circle" alt="Ryan" >
                 </div>
                 <div class="col-md-7">
-                    <div class="jumbotron">
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h1>Ryan Pelletier</h1>
-                                <p class="primary-text-color">
-                                    Hey guys! Thanks for visiting my page. Below you will find information
-                                    about me as well as some fun and useful projects that I have been working on.
-                                    I am currently a senior at Liberty University studying computer science.
-                                    As you will see below I have several areas of interest
-                                    and experience.
-                                </p>
-                            </div>
+                        <div class="row summary-container">
+                                <div class="col-md-12">
+                                    <h1 class="summary-title">Ryan Pelletier<small style="color:white;"> - Software Engineer</small></h1>
+                                </div>
+                                <div class="info">
+                                    <ul>
+                                        <li><strong>PHONE   </strong><span class="info-phone">000-000-0000</span></li>
+                                        <li><strong>CITY    </strong><span class="info-city">Lynchburg, VA</span></li>
+                                        <li><strong>E-MAIL  </strong><span class="info-email">ryanmatthewpelletier@email.com</span></li>
+                                        <li><strong>LinkedIn</strong> <span class="info-linkedin"><a href="https://www.linkedin.com/in/ryanmatthewpelletier?trk=hp-identity-name">Ryan Pelletier</a></span></li>
+                                    </ul>
+                                </div>
                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="skills">
+        <div class="container">
+            <h2 class ="title">Skills</h2>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-6 bar-grids">
+                        Java, JavaFX
+                    </div>
+                    <div class="col-md-6 bar-grids">
+                        Spring Framework, Spring MVC
+                    </div>
+                    <div class="col-md-6 bar-grids">
+                        C++
+                    </div>
+                    <div class="col-md-6 bar-grids">
+                        git, JIRA, Eclipse, Intellij, Jenkins
+                    </div>
+                    <div class="col-md-6 bar-grids">
+                        Grails/Groovy
+                    </div>
+                    <div class="col-md-6 bar-grids">
+                        Apache Camel
+                    </div>
+                    <div class="col-md-6 bar-grids">
+                        SQL
+                    </div>
+                    <div class="col-md-6 bar-grids">
+                        HTML, JavaScript, CSS including Angular and Bootstrap!
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="projects" class="projects">
+
+    <div id="projects" class="projects dark-primary-color">
         <div class="container">
-            <h2 class ="title">Projects: <small><a href="https://github.com/ryanp102694">Check out my GitHub</a></small></h2>
+            <h2 class ="title  text-primary-color">Projects: <small><a href="https://github.com/ryanp102694">Check out my GitHub</a></small></h2>
             <div class="row">
                 <div class="col-md-4">
-                    <a href="img/quadcopter.jpg" class="thumbnail gray-background">
+                    <a href="https://github.com/ryanp102694/quadcopter_arduino_v0.1" class="thumbnail gray-background">
                         <img src="img/quadcopter_thumbnail.png" alt="Quadcopter" class="img-rounded" style="width:300px;height:250px">
                     </a>
                 </div>
@@ -119,12 +148,12 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/sprint_time_report.PNG" class="thumbnail gray-background">
+                    <a href="https://github.com/ryanp102694/sprint-report" class="thumbnail gray-background">
                         <img src="img/jira_logo.jpg" alt="Sprint Time Report" class="img-rounded" style="width:300px;height:250px">
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/valuelistservice_rest.png" class="thumbnail gray-background">
+                    <a href="http://ryanp102694.github.io/valuelistservice/index.html" class="thumbnail gray-background">
                         <img src="img/valuelistservice_rest.png" alt="ValueListService" class="img-rounded" style="width:300px;height:250px">
                     </a>
                 </div>
@@ -132,19 +161,20 @@
         </div>
     </div>
 
-    <div id="work_experience" class="work_experience dark-primary-color">
+
+    <div id="work_experience" class="work_experience">
         <div class="container">
-            <h2 class ="title text-primary-color">Work Experience</h2>
+            <h2 class ="title">Work Experience</h2>
             <div class="jumbotron">
                 SharpTop Software,
-                Booz Allan Hamilton
+                Booz Allen Hamilton
             </div>
         </div>
     </div>
 
-    <div id="education" class="education">
+    <div id="education" class="education dark-primary-color">
         <div class="container">
-            <h2 class ="title">Education</h2>
+            <h2 class ="title text-primary-color">Education</h2>
             <div class="jumbotron">
                 Liberty University Computer Science 4.0 GPA
             </div>
