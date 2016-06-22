@@ -7,7 +7,7 @@
 }
 
 .projects,.education,.work_experience,.skills{
-    border: solid #B6B6B6 2px;
+    border: solid white 2px;
     padding: 2em 5em 2em 5em;
 }
 .about{
@@ -46,8 +46,8 @@
     color:white
 }
 
-.info-phone{
-    padding-left: 75px;
+.info-school{
+    padding-left: 63px;
 }
 .info-city{
     padding-left: 92px;
@@ -61,7 +61,7 @@
 
 .info-paragraph{
     margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 15px;
     font-weight: 200;
 }
 
@@ -84,6 +84,10 @@
 
 .work_experience{
     color: white;
+    background-image: url("../img/sharptop.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+
 }
 
 .work_experience h5 span.glyphicon{
@@ -98,6 +102,10 @@
     transform: scale(1.5);
 }
 .work-info-right:hover h5{
+}
+
+.work-section{
+    padding-top: 2em;
 }
 
 
