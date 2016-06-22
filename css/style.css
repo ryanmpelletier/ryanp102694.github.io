@@ -73,3 +73,122 @@
     display: block;
     margin: 0 auto;
 }
+
+.work_experience{
+    background-color: black;
+}
+
+.work_experience .work-info-left{
+    border-right: 1px solid black;
+}
+
+.work_experience{
+    color: white;
+}
+
+.work_experience h5 span.glyphicon{
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+    color:white;
+}
+.work-info-right:hover h5 span.glyphicon{
+    transform: scale(1.5);
+}
+.work-info-right:hover h5{
+}
+
+
+/*--work--*/
+/*.work {*/
+    /*background: #000;*/
+/*}*/
+/*.work-left {*/
+    /*text-align: right;*/
+    /*padding: 3em 5em 0 0;*/
+/*}*/
+/*.work-right {*/
+    /*border-left: 1px solid #999;*/
+    /*padding: 2.5em 0 2em 6em;*/
+/*}*/
+/*.work-info h4 {*/
+    /*font-size: 1.2em;*/
+    /*background: darkcyan;*/
+    /*display: inline-block;*/
+    /*padding: .6em 1.2em;*/
+    /*color: #fff;*/
+    /*position:relative;*/
+/*}*/
+/*.work-info h4:before {*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*position: absolute;*/
+    /*!*-- w3layouts --*!*/
+    /*content: '';*/
+    /*top: 9px;*/
+    /*right: -14px;*/
+    /*border-style: solid;*/
+    /*border-width: 10px 0 10px 16px;*/
+    /*border-color: transparent transparent transparent rgb(0, 139, 139);*/
+/*}*/
+/*.work-info h5 {*/
+    /*font-size: 1.3em;*/
+    /*color: #F7E612;*/
+    /*margin-bottom: .5em;*/
+    /*border: 1px solid #F7E612;*/
+    /*display: inline-block;*/
+    /*padding: 0 1.2em;*/
+/*}*/
+/*.work-info h5 span.glyphicon {*/
+    /*font-size: 0.9em;*/
+    /*color: #fff;*/
+    /*background: #008B8B;*/
+    /*padding: 1em;*/
+    /*-webkit-border-radius: 70%;*/
+    /*-moz-border-radius: 70%;*/
+    /*border-radius: 70%;*/
+    /*-webkit-transition: .5s all;*/
+    /*-moz-transition: .5s all;*/
+    /*transition: .5s all;*/
+    /*-webkit-transform: scale(1);*/
+    /*-moz-transform: scale(1);*/
+    /*transform: scale(1);*/
+    /*-o-transform: scale(1);*/
+    /*-ms-transform: scale(1);*/
+/*}*/
+/*.work-right h5 span.glyphicon {*/
+    /*margin-right: 5em;*/
+    /*margin-left: -8em;*/
+/*}*/
+/*.work-left2 h5 span.glyphicon {*/
+    /*margin-left: 4em;*/
+    /*margin-right: -7.3em;*/
+    /*z-index: 9;*/
+/*}*/
+/*.work-right.work-right2 {*/
+    /*min-height: 210px;*/
+    /*float: right;*/
+/*}*/
+/*.work-right.work-right2 h4:before {*/
+    /*left: -14px;*/
+    /*-webkit-transform: rotate(180deg);*/
+    /*-moz-transform: rotate(180deg);*/
+    /*!*-- agileits --*!*/
+    /*transform: rotate(180deg);*/
+    /*-o-transform: rotate(180deg);*/
+    /*-ms-transform: rotate(180deg);*/
+/*}*/
+/*.work-right.work-right2 h4 {*/
+    /*margin-top: 0.8em;*/
+/*}*/
+/*.work-info:hover h5 span.glyphicon {*/
+    /*color: #F7E612;*/
+    /*-webkit-transform: scale(1.2);*/
+    /*-moz-transform: scale(1.2);*/
+    /*transform: scale(1.2);*/
+    /*-o-transform: scale(1.2);*/
+    /*-ms-transform: scale(1.2);*/
+/*}*/
+

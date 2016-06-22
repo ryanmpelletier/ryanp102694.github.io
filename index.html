@@ -23,7 +23,7 @@
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event){
                 event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                $('html,body').animate({scrollTop:$(this.hash).offset().top - 53},1000);
             });
         });
     </script>
@@ -54,8 +54,8 @@
                 <li class="active"><a href="#" class="scroll">Home</a></li>
                 <li><a href="#about" class="scroll">About</a></li>
                 <li><a href="#skills" class="scroll">Skills</a></li>
-                <li><a href="#projects" class="scroll">Projects</a></li>
                 <li><a href="#work_experience" class="scroll">Work Experiece</a></li>
+                <li><a href="#projects" class="scroll">Projects</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="mailto:ryanmatthewpelletier@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a></li>
@@ -184,6 +184,26 @@
         </div>
     </div>
 
+    <div id="work_experience" class="work_experience">
+        <h1 class ="title">Work Experience</h1>
+        <div class="container">
+            <div>
+                <div class="col-md-3 work-info-left">
+                    <img src="img/liberty.jpg" class="img-circle"/>
+                </div>
+                <div class="col-md-9 work-info-right">
+                    <h5><span class="glyphicon glyphicon-tree-deciduous"> </span> <strong>Liberty University</strong> - landscaping</h5>
+                    <p>
+                        I spent my Freshman year helping make Liberty University beautiful. My duties included trimming hedges,
+                        wheed-whacking, mowing, and picking up a whole lot of garbage. Meanwhile enjoying the great outdoors, meeting lots of people,
+                        and making new friends.
+                    </p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
     <div id="projects" class="projects dark-primary-color">
         <div class="container">
             <h2 class ="title  text-primary-color">Projects - <small><a href="https://github.com/ryanp102694">Check out my GitHub</a></small></h2>
@@ -218,17 +238,6 @@
                         <img src="img/valuelistservice_rest.png" alt="ValueListService" class="img-rounded" style="width:300px;height:250px">
                     </a>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="work_experience" class="work_experience">
-        <div class="container">
-            <h2 class ="title">Work Experience</h2>
-            <div class="jumbotron">
-                SharpTop Software,
-                Booz Allen Hamilton
             </div>
         </div>
     </div>
