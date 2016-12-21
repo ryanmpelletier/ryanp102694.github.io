@@ -73,19 +73,20 @@
     <script>
 
         var svgImage = document.getElementById("backdropsvg");
-        svgImage.addEventListener("load", function(){
+        var updateTime = function(){
             var time = new Date();
             var hours = time.getHours();
             var minutes = time.getMinutes();
-            if(hours > 12){
+            if (hours > 12) {
                 hours = hours - 12;
             }
-            if(minutes < 10){
+            if (minutes < 10) {
                 minutes = "0" + minutes;
             }
             var timeElement = svgImage.contentDocument.getElementById("time");
             timeElement.innerHTML = hours + ":" + minutes;
-        });
+        };
+        svgImage.addEventListener("load", function(){updateTime(); setInterval(updateTime,1000)});
     </script>
 
     </body>
