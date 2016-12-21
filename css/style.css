@@ -10,22 +10,22 @@
     border: solid white 2px;
     padding: 2em 5em 2em 5em;
 }
-.about{
-    padding-top: 10em;
-    padding-bottom: 5em;
-}
+/*.about{*/
+    /*padding-top: 10em;*/
+    /*height: 75em;*/
+    /*padding-bottom: 5em;*/
+/*}*/
 
+/*<text id="time" x="380" y="397" fill="black">9:11</text>*/
 #main_image{
     border: solid white 2px;
 }
-.backdrop{
-    background-color: transparent;
-    background-image: url("../img/city.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0px -150px;
-
-}
+/*.backdrop{*/
+    /*background-color: transparent;*/
+    /*background-image: url("../img/backdrop.svg");*/
+    /*background-size: 100%;*/
+    /*background-repeat: no-repeat;*/
+/*}*/
 
 .summary-container{
     padding-top: 35px;
