@@ -10,59 +10,18 @@
     border: solid white 2px;
     padding: 2em 5em 2em 5em;
 }
-.about{
-    padding-top: 10em;
-    padding-bottom: 5em;
-}
 
 #main_image{
     border: solid white 2px;
 }
 .backdrop{
+    padding-top: 10em;
+    padding-bottom: 5em;
     background-color: transparent;
     background-image: url("../img/city.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px -150px;
-
-}
-
-.summary-container{
-    padding-top: 35px;
-    color: white;
-}
-
-.summary-title{
-    font-size: 50px;
-}
-
-.info{
-    clear:left;
-    border-top: solid white 1px;
-    padding-top: 10px;
-}
-
-.info a{
-    color:white
-}
-
-.info-school{
-    padding-left: 63px;
-}
-.info-city{
-    padding-left: 92px;
-}
-.info-email{
-    padding-left: 75px;
-}
-.info-linkedin{
-    padding-left: 65px;
-}
-
-.info-paragraph{
-    margin-bottom: 15px;
-    font-size: 15px;
-    font-weight: 200;
+    background-attachment: fixed;
 }
 
 .other-title{
