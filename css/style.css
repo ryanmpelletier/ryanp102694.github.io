@@ -66,3 +66,7 @@
 .work-section{
     padding-top: 2em;
 }
+
+.clickable:hover{
+    cursor: pointer;
+}
