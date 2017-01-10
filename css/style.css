@@ -37,13 +37,9 @@
     background-color: black;
 }
 
-/*.work_experience .work-info-left{*/
-    /*border-right: 1px solid white;*/
-/*}*/
-
 .work_experience{
     color: white;
-    background-image: url("../img/sharptop.jpg");
+    background-color: black;
     background-size:100%;
     background-repeat: no-repeat;
 
@@ -57,11 +53,6 @@
     transition: .5s all;
     color:white;
 }
-.work-info-right:hover h5 span.glyphicon{
-    transform: scale(1.5);
-}
-.work-info-right:hover h5{
-}
 
 .work-section{
     padding-top: 2em;
@@ -70,4 +61,8 @@
 
 .clickable:hover{
     cursor: pointer;
+}
+
+.experience-image{
+    padding-top: 2em;
 }
