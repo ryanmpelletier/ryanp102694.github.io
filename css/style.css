@@ -17,8 +17,8 @@
 .backdrop{
     padding-top: 10em;
     padding-bottom: 5em;
-    background-color: transparent;
     background-image: url("../img/city.jpg");
+    background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -35,13 +35,9 @@
 
 .work_experience{
     background-color: black;
-}
-
-.work_experience{
-    color: white;
-    background-color: #616570;
     background-size:100%;
     background-repeat: no-repeat;
+    color:white;
 
 }
 
@@ -65,4 +61,11 @@
 
 .experience-image{
     padding-top: 2em;
+}
+
+.projects{
+    background-image: url("../img/SF.jpg");
+    background-color: transparent;
+    background-size:100%;
+    background-repeat: no-repeat;
 }
