@@ -1,13 +1,133 @@
 
-/*padding to lower site below nav-bar*/
-body {
-    padding-top: 65px;
+/*
+    This is a bit of a hack for now, I wanted ot hide some x overflow that I didn't want
+*/
+body{
+    overflow-x: hidden;
 }
 
-.blurry{
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -ms-filter: blur(2px);
-    -o-filter: blur(2px);
-    filter: blur(2px);
+/*
+   This is for the main background image, the first thing the user things
+*/
+.responsive-image-background{
+    width: auto;
+    min-height: 60em;
+    max-height: 60em;
+    z-index: -1;
+    position: absolute;
 }
+
+
+.profile-container{
+    padding-top: 2em;
+    font-size: 4em;
+    color:white;
+}
+
+/*
+    Center the profile image
+*/
+.profile-image{
+    border: white .05em solid;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+/*Center the text underneath the profile image*/
+.profile-title{
+    text-align: center;
+}
+
+/*need significant padding to bring projects section below the background image*/
+.projects{
+    padding-top:22em;
+}
+
+/*box containing the content for each project*/
+.project-box{
+    margin-top: 10px;
+    padding: 1.5em;
+    color: #eee;
+    background-color: #222;
+}
+/*box for title of the project*/
+.project-title-box{
+    margin-bottom: .25em;
+}
+/*box for description of each project*/
+.project-description-box{
+    padding-top: 2em;
+}
+/*upvote-downvote is positioned by a bootstrap column, the individual parts are positioned absolutely relative to their upvote-downvote containing element*/
+.upvote-downvote{
+    font-size: 2.5em;
+}
+
+/*the number between the upvote and downvote buttons*/
+.count{
+    position: absolute;
+    min-width: 35px;
+    text-align: center;
+    font-size: 20px;
+    top: 27px;
+    left: 16px;
+}
+
+.upvote{
+    position: absolute;
+    top: 5px;
+
+}
+
+.upvote:hover{
+    color: #3c763d;
+    cursor: pointer;
+}
+
+.downvote{
+    position: absolute;
+    top: 42px;
+}
+
+.downvote:hover{
+    color: #a94442;
+    cursor: pointer;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*
+Min-Width: refers to everything greater than or equal to the amount given
+Max-Width: referes to everything less than or equal to the amount given
+
+*/
+
+/*==========  Mobile First Method  ==========*/
+
+/*!* Custom, iPhone Retina *!*/
+/*@media only screen and (min-width : 320px) {*/
+
+/*}*/
+
+/*!* Extra Small Devices, Phones *!*/
+/*@media only screen and (min-width : 480px) {*/
+    /**/
+/*}*/
+
+/*!* Small Devices, Tablets *!*/
+/*@media only screen and (min-width : 768px) {*/
+
+/*}*/
+
+/*!* Medium Devices, Desktops *!*/
+/*@media only screen and (min-width : 992px) {*/
+
+/*}*/
+
+/*!* Large Devices, Wide Screens *!*/
+/*@media only screen and (min-width : 1200px) {*/
+
+/*}*/
