@@ -154,26 +154,6 @@
                 }
             }
         });
-
-        //when something in the project changes, update the votes for it, I think this is doing more than it should have to
-        projectsRef.on('child_changed', function(snapshot){
-            var votes_selector = '#' + snapshot.val().title.toString().split(' ').join('') + '_votes';
-            $(votes_selector).html(snapshot.val().votes);
-        });
-
-        function upvoteProject(projectId){
-            const projectVotesRef = firebase.database().ref().child("projects").child(projectId);
-            projectVotesRef.once('value').then(function(snapshot){
-                projectVotesRef.update({"votes" :snapshot.val().votes + 1});
-            });
-        }
-
-        function downvoteProject(projectId){
-            const projectVotesRef = firebase.database().ref().child("projects").child(projectId);
-            projectVotesRef.once('value').then(function(snapshot){
-                projectVotesRef.update({"votes" :snapshot.val().votes - 1});
-            });
-        }
     </script>
 
     <title>ryanpdev - Home</title>
