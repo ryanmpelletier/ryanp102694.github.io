@@ -131,7 +131,7 @@
             var projects = snapshot.val();
             for (var project in projects) {
                 if (projects.hasOwnProperty(project)) {
-                    var projectControlsHTML = '<div class="project-box content-1 container"><div class="row"><div class="col-xs-12 col-md-4"><div class="row project-title-box"> <div class="col-xs-2"><div class="upvote-downvote"><div class="glyphicon glyphicon-triangle-top upvote" onclick="upvoteProject(\'' + projects[project].title + '\')"></div><div class="glyphicon glyphicon-triangle-bottom downvote" onclick="downvoteProject(\'' + projects[project].title + '\')"></div><div id="' + projects[project].title.toString().split(' ').join('') + '_votes' + '" class="count">' + projects[project].votes + '</div></div></div><div class="col-xs-10"> <h1>' + projects[project].title + '</h1></div></div><div class="row"><div class="col-xs-12"><img class="img-responsive" src="' + projects[project].image + '" alt="' + projects[project].title + '"/></div></div></div><div class="col-xs-12 col-md-8"><div class="project-description-box">' + projects[project].description + '</div></div></div></div>';
+                    var projectControlsHTML = '<div class="project-box content-1"><div class="row"><div class="col-xs-12 col-md-4"><div class="row project-title-box"> <div class="col-xs-2"><div class="upvote-downvote"><div class="glyphicon glyphicon-triangle-top upvote" onclick="upvoteProject(\'' + projects[project].title + '\')"></div><div class="glyphicon glyphicon-triangle-bottom downvote" onclick="downvoteProject(\'' + projects[project].title + '\')"></div><div id="' + projects[project].title.toString().split(' ').join('') + '_votes' + '" class="count">' + projects[project].votes + '</div></div></div><div class="col-xs-10"> <h1>' + projects[project].title + '</h1></div></div><div class="row"><div class="col-xs-12"><img class="img-responsive" src="' + projects[project].image + '" alt="' + projects[project].title + '"/></div></div></div><div class="col-xs-12 col-md-8"><div class="project-description-box">' + projects[project].htmlContent + '</div></div></div></div>';
                     $('#projects-box').append(projectControlsHTML);
                 }
             }
@@ -206,12 +206,49 @@
                 </div>
             <div class="col-lg-4 hidden-xs"></div>
         </div>
-
+        <!-- probably should rename projects-sidebar-content to something else -->
         <div class="projects container-fluid">
             <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="projects-sidebar-content">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/ryanpdev.appspot.com/o/longboard.jpg?alt=media&token=771bdb1e-2a0b-4ecc-876d-499d48246743" class="img-responsive"/>
+                            </div>
+                            <div class="col-xs-12">
+                                <h2>About Me</h2>
+                                <p>
+                                    My name is Ryan Pelletier, I currently work as a software engineer at Booz Allen Hamilton.
+                                    My main areas of expertise include Spring MVC development with Java, as well as using Angular 1.X
+                                    and Bootstrap on the front end.
+                                </p>
+                                <p>
+                                    I started my development career at a small startup called SharpTop Software. I worked on Grails web applications.
+                                    It was hard, but I learned a lot! SharpTop wrote a nice<a href="http://sharptop.io/blog/2015/7/29/sharptop-intern-spotlight-ryan-pelletier"> article about me</a>.
+                                </p>
+                                <h4>Education</h4>
+                                <p>
+                                    I graduated with a degree in computer science from Liberty University in 2017. My various coursework included
+                                    several C++ classes, discrete math, linear algebra, physics, and miscellaneous computer science classes (web development, architecture, databases).
+                                </p>
+                                <h4>Hobbies</h4>
+                                <p>
+                                    As you can see, I enjoy tinkering with different types of technologies ranging from OpenCV for image processing,
+                                    to embedded development with Arduino. In my spare time I enjoy playing basketball, video games, or cruising around on my longboard.
+                                </p>
+                                <h4>Find Me</h4>
+                                <ul class="links-list">
+                                    <li><a href="https://github.com/ryanp102694">Github</a></li>
+                                    <li><a href="https://stackoverflow.com/users/3502664/ryanp102694">Stack Overflow</a></li>
+                                    <li><a href="https://plus.google.com/+RyanPelletier102694">Google+</a></li>
+                                    <li><a href="https://www.linkedin.com/in/ryanmatthewpelletier/">LinkedIn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- projects are dynamically loaded in here from firebase -->
-                <div id="projects-box">
-
+                <div id="projects-box" class="col-md-8 col-xs-12">
                 </div>
             </div>
         </div>

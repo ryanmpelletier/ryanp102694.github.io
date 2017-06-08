@@ -95,6 +95,23 @@ body{
     cursor: pointer;
 }
 
+
+/*.projects-sidebar-box{*/
+    /*margin-top: 10px;*/
+    /*padding-left: 1.5em;*/
+/*}*/
+
+.projects-sidebar-content{
+    margin-top: 10px;
+    padding: 1.5em;
+    color: #eee;
+    background-color: #98988c;
+}
+
+.links-list{
+    margin-left: -25px;
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
